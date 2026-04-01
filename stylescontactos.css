@@ -1,0 +1,125 @@
+:root{
+--baseline: 0.5rem; /*8px*/
+--padding-general: 2rem; /*32px*/
+--gap-general: 1rem; /*16px*/
+
+/*Escala tipográfica*/
+/*Ratio 1.333*/
+/*16px*/
+
+--step-0: 1rem; 
+--step-1: 1.333rem; 
+--step-2: 1.776889rem; 
+--step-3: 2.368593037rem;
+--step-4: 3.157334518321rem; 
+
+
+--color1:#81bf36c1;
+--color2:#3dbf36b9;
+--color3:#36bf74b4;
+--color4:#2F4F15;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    display: flex;
+    background: var(--color1);
+    justify-content: center;
+    gap: var(--gap-general);
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: var(--gap-general);
+    padding: var(--padding-general);
+}
+.nav a{
+    font-family:"Playfair Display",serif;
+    color: white;
+    text-decoration: none;
+    font-size: var(--step-2);
+    padding: var(--padding-general);
+}
+.nav p{
+    font-family:"Playfair Display",serif;
+    color: white;
+    font-size: var(--step-2);
+   justify-items: left;
+    padding: var(--padding-general);
+}
+li a:hover{
+    color: var(--color4);
+}
+
+.layout1{
+    display: flex;
+    background: var(--color1);
+    justify-content: center;
+    gap: var(--gap-general);
+}
+.contactos{
+    list-style: none;
+    display: flex;
+    gap: var(--gap-general);
+    padding: var(--padding-general);
+}
+.contactos a{
+    font-family:"Playfair Display",serif;
+    color: white;
+    text-decoration: none;
+    font-size: var(--step-2);
+    padding: var(--padding-general);
+}
+
+
+
+
+@media (max-width:600px){
+   .nav{
+    display: flex;
+    background: var(--color1);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: 3rem;
+}
+     .nav p{
+       font-size: 0.6rem;
+       justify-items: left;
+        padding: 0rem;
+      
+    }
+    .nav-list a{
+        font-size: 0.57rem;
+        padding: 0rem;
+        gap: 0.5rem;
+    }
+    .layout1{
+        grid-template-columns: 1fr;
+    }
+
+   
+.contactos{
+    list-style: none;
+    display: flex;
+    gap: var(--gap-general);
+    padding: var(--padding-general);
+}
+.contactos a{
+    font-family:"Playfair Display",serif;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: var(--padding-general);
+}
+
+}

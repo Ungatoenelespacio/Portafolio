@@ -1,0 +1,233 @@
+:root{
+--baseline: 0.5rem; /*8px*/
+--padding-general: 2rem; /*32px*/
+--gap-general: 1rem; /*16px*/
+
+/*Escala tipográfica*/
+/*Ratio 1.333*/
+/*16px*/
+
+--step-0: 1rem; 
+--step-1: 1.333rem; 
+--step-2: 1.776889rem; 
+--step-3: 2.368593037rem;
+--step-4: 3.157334518321rem; 
+
+
+--color1:#81bf36c1;
+--color2:#3dbf36b9;
+--color3:#36bf74b4;
+--color4:#2F4F15;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/*navegación*/
+.nav{
+    display: flex;
+    background: var(--color1);
+    justify-content: center;
+    gap: var(--gap-general);
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: var(--gap-general);
+    padding: var(--padding-general);
+}
+.nav a{
+    font-family:"Playfair Display",serif;
+    color: white;
+    text-decoration: none;
+    font-size: var(--step-2);
+    padding: var(--padding-general);
+}
+.nav p{
+    font-family:"Playfair Display",serif;
+    color: white;
+    font-size: var(--step-2);
+   justify-items: left;
+    padding: var(--padding-general);
+}
+li a:hover{
+    color: var(--color4);
+}
+
+
+/*Grid para escritorio*/
+.layout1{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: var(--baseline);
+    gap: var(--gap-general);
+    padding: var(--padding-general);
+
+}
+.intro{    
+    grid-column: 2/12;
+    grid-row: span 9;
+    color:var(--color4);
+    background: white;
+    padding: var(--padding-general);
+}
+.intro h1{
+    font-family:"Playfair Display",serif;
+    font-size: var(--step-4);
+    line-height: 0.7;
+    text-align: center;
+    margin-bottom: var(--baseline);
+}
+.intro p{
+    font-family:"Playfair Display",serif;
+    font-size: var(--step-2);
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: var(--baseline);
+    padding: var(--padding-general);
+}
+
+
+/*carrusel de imágenes*/
+.carrusel{
+    display: flex;
+    overflow-x: scroll;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.carrusel img{
+    width: 50%;
+    height: auto;
+    opacity: 1;
+    height: auto;
+    padding: var(--padding-general);
+    transition: opacity 250ms ease-in;
+}
+.carrusel img:hover{
+   opacity: 0.7;
+  
+}
+#luna1{
+    width: 30%;
+    height: auto;   
+}
+
+div::-webkit-scrollbar {
+    height: 12px;
+    background-color: var(--color1);
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color:var(--color4);
+    border-radius: 5px;
+    
+}
+
+
+/*footer*/
+.footer{
+    display: flex;
+    background: var(--color1);
+    justify-content: left;
+    gap: var(--gap-general);
+    padding: 1rem;
+}
+.footer p{
+    font-family:"Playfair Display",serif;
+    color: white;
+    text-decoration: none;
+    font-size: var(--step-0);
+    margin-left: 5px;
+}
+
+
+
+/*Media query*/
+/*Celular*/
+
+
+@media (max-width:600px){
+    .nav{
+    display: flex;
+    background: var(--color1);
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    height: 3rem;
+}
+     .nav p{
+       font-size: 0.6rem;
+       justify-items: left;
+        padding: 0rem;
+      
+    }
+    .nav-list a{
+        font-size: 0.57rem;
+        padding: 0rem;
+        gap: 0.5rem;
+    }
+    .layout1{
+        grid-template-columns: 1fr;
+    }
+
+    .intro{
+        grid-column: span 1;
+        grid-row: span 6;
+        text-align: center;
+        padding: 0.7rem;
+    }
+    .intro h1{
+    font-family:"Playfair Display",serif;
+    font-size: var(--step-2);
+    line-height: 0.9;
+    text-align: center;
+    }
+    .intro p{
+    font-family:"Playfair Display",serif;
+    font-size: var(--step-0);
+    line-height: 1;
+    text-align: center;
+    padding: 0;
+    }
+.carrusel{
+    display: flex;
+    overflow-x: scroll;
+    align-content: center;
+    margin-bottom: 1rem;
+    width: 100vh;
+    height:auto;
+}
+.carrusel img{
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    padding:0.3rem;
+    transition:  opacity 250ms ease-in;
+}
+
+/*footer*/
+.footer{
+    display: flex;
+    background: var(--color1);
+    justify-content: left;
+    gap: var(--gap-general);
+    padding: 0.5rem;
+}
+.footer p{
+    font-family:"Playfair Display",serif;
+    color: white;
+    text-decoration: none;
+    font-size:0.7rem;
+    margin-left: 5px;
+}
+}
