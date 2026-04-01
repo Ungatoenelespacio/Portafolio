@@ -155,7 +155,7 @@ div::-webkit-scrollbar-thumb {
 /*Celular*/
 
 
-@media (max-width:600px){
+@media (max-width:930px){
     .nav{
     display: flex;
     background: var(--color1);
