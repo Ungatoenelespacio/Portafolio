@@ -185,6 +185,7 @@ div::-webkit-scrollbar-thumb {
         grid-row: span 6;
         text-align: center;
         padding: 0.7rem;
+        margin-bottom: 0.5rem;
     }
     .intro h1{
     font-family:"Playfair Display",serif;
