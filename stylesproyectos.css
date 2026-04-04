@@ -200,19 +200,18 @@ div::-webkit-scrollbar-thumb {
     grid-row: span 16;
     padding: var(--padding-general);
     color: var(--color4);
-    margin: 1rem;
    
 }
 .descripcion h2{
     font-family:"Playfair Display",serif;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1;
     text-align: left;
     padding: 0.5rem;
 }
 .descripcion p{
     font-family:"Playfair Display",serif;
-    font-size: 1.3rem;
+    font-size: 0.7rem;
     line-height: 1;
     text-align: left;
     margin-bottom: var(--baseline);
