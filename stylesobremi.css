@@ -294,7 +294,7 @@ transform: scaleX(1);
 
 
 
-@media (max-width:844px){
+@media (max-width:420px){
    .nav{
     display: flex;
     background: var(--color1);
