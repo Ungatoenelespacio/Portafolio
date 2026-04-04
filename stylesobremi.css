@@ -294,7 +294,7 @@ transform: scaleX(1);
 
 
 
-@media (max-width:480px){
+@media (max-width:420px){
    .nav{
     display: flex;
     background: var(--color1);
@@ -345,7 +345,7 @@ transform: scaleX(1);
     color: var(--color4);
     line-height: 1;
     text-align: left;
-    margin-top: 1rem;
+    margin: 1rem;
     padding: 0.5rem;
 }
 .descripcion img{
